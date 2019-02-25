@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Filestack</title>
-    <link>http://example.org/pages/</link>
+    <link>https://marcingaleza.github.io/fs/pages/</link>
     <description>Recent content in Pages on Filestack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://example.org/pages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marcingaleza.github.io/fs/pages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Filestack: The File Upload API That Delivers Content into Your App</title>
-      <link>http://example.org/pages/homepage/</link>
+      <link>https://marcingaleza.github.io/fs/pages/homepage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/pages/homepage/</guid>
+      <guid>https://marcingaleza.github.io/fs/pages/homepage/</guid>
       <description>Here’s what the #1 developer service for content can do for your business. Upload Get user content from anywhere and dramatically improve any file or video upload with a powerful, easy to use API. Uploads, URL ingestion and iOS/Android device integration are all made fast and easy via the #1 developer service for uploads.
   Transform Prepare content to be just right. Easily transform, convert and optimize images, files and videos right on the network-before it even arrives in your app.</description>
     </item>
