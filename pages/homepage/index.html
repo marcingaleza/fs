@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filestack</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/default.min.css">
+  
+  <link rel="stylesheet" href="http://example.org/sass/main.min.a5379bf2d1f08cf804ca7d80ba9f312f4824f9fc76ed1c67a0c2b8578944663c.css" emotion="🤩">
+  <script defer src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.1.0/vuex.min.js"></script>
+  <script defer src="https://static.filestackapi.com/filestack-js/1.x.x/filestack.min.js"></script>
+  <script defer src="/js/product-showcase.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+      });
+    });
+  </script>
+</head>
+
+<body>
+<nav class="o-navBar" id="mainNav" role="banner">
+  <a class="o-navBar__brand" href="/" title="Visit the homepage">Filestack</a>
+  <div class="o-navBar__content">
+    <ul class="o-navBar__list">
+      <li class="o-navBar__item -dropdown">
+        <a href="#" class="o-navBar__link">Why Filestack?</a>
+        <div class="o-navBar__dropdown o-dropdown">
+          <p class="o-dropdown__title">Why Filestack</p>
+          <a href="#" class="o-dropdown__link">DIY Considerations</a>
+          <a href="#" class="o-dropdown__link">Customers</a>
+          <p class="o-dropdown__title">Use Cases</p>
+          <a href="#" class="o-dropdown__link">Print</a>
+          <a href="#" class="o-dropdown__link">Drone</a>
+          <a href="#" class="o-dropdown__link">Ed-tech</a>
+        </div>
+      </li>
+      <li class="o-navBar__item">
+        <a href="#" class="o-navBar__link">Workflows</a>
+      </li>
+      <li class="o-navBar__item -dropdown">
+        <a href="#" class="o-navBar__link">Products</a>
+        <div class="o-navBar__dropdown o-dropdown">
+          <p class="o-dropdown__title">Products</p>
+          <a href="#" class="o-dropdown__link">Filestack <b>Upload</b> &trade;</a>
+          <a href="#" class="o-dropdown__link">Filestack <b>Transformation</b> &trade;</a>
+          <a href="#" class="o-dropdown__link">Filestack <b>Intelligence</b> &trade;</a>
+          <a href="#" class="o-dropdown__link">Filestack <b>Delivery</b> &trade;</a>
+        </div>
+      </li>
+      <li class="o-navBar__item">
+        <a href="#" class="o-navBar__link">Pricing</a>
+      </li>
+      <li class="o-navBar__item">
+        <a href="#" class="o-navBar__link">Blog</a>
+      </li>
+      <li class="o-navBar__item">
+        <a href="#" class="o-navBar__link">Contact</a>
+      </li>
+      <li class="o-navBar__item">
+        <a href="#" class="o-navBar__link">Docs</a>
+      </li>
+    </ul>
+    <div class="m-btnGroup m-btnGroup--navigation">
+      <a href="#" class="a-btn -primary">Sign Up Free</a>
+      <a href="#" class="a-btn -ghost">Log In</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    window.addEventListener('scroll', function (e) {
+      var nav = document.getElementById('mainNav');
+      if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+        nav.classList.add('-scrolled');
+      } else {
+        nav.classList.remove('-scrolled');
+      }
+    });
+  });
+</script>
+<section class="o-hero">
+  <div class="container d-grid d-grid--2cols">
+    <div>
+      <h1 class="a-hero__title">The File Handling Service for Developers</h1>
+      <p class="a-hero__lead">Powerful APIs that allow you to upload, transform and deliver any file into your app.</p>
+      <div class="m-hero__CTA">
+        <a href="#" class="a-btn -primary">Sign Up Free</a>
+        <a href="#" class="a-btn -ghost">Request Demo</a>
+      </div>
+    </div>
+    <div>
+      <div class="m-card -shadow">
+        <div class="m-card__header">
+
+        </div>
+        <div class="m-card__body">
+          <pre><code class="hljs javascript">&lt;script src="//static.filestackapi.com/filestack-js/1.x.x/filestack.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  const client = filestack.init('apikey');
+  const options = {
+    onUploadDone: (res) => console.log(res),
+  };
+  client.picker(options).open();
+&lt;/script&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="p-customersBar">
+  <div class="container d-flex d-flex--justifyContent-spaceAround">
+    <span>TRUSTED BY</span>
+    <img src="/images/customer-logo-sendGrid.svg" alt="SendGrid Logo">
+    <img src="/images/customer-logo-slideShare.svg" alt="SlideShare Logo">
+    <img src="/images/customer-logo-teachable.svg" alt="Teachable Logo">
+    <img src="/images/customer-logo-jibJab.svg" alt="JibJab Logo">
+  </div>
+</section>
+<main id="productShowcase">
+    <section class="u-py-70">
+      <div class="container">
+        <h2 class="u-textCenter u-pb-30">Here’s what the #1 developer service for content can do for your business.</h2>
+        <div class="d-grid d-grid--3cols">
+          <div class="m-card -shadow u-textCenter">
+            <div class="m-card__body">
+              <p><img src="/images/icon-upload.svg" alt=""></p>
+              <h4 class="u-text-uppercase">Upload</h4>
+              <p>Get user content from anywhere and dramatically improve any file or video upload with a powerful, easy to use API. Uploads, URL ingestion and iOS/Android device integration are all made fast and easy via the #1 developer service for uploads.</p>
+            </div>
+          </div>
+          <div class="m-card -shadow u-textCenter">
+            <div class="m-card__body">
+              <p><img src="/images/icon-transform.svg" alt=""></p>
+              <h4 class="u-text-uppercase">Transform</h4>
+              <p>Prepare content to be just right. Easily transform, convert and optimize images, files and videos right on the network-before it even arrives in your app.</p>
+            </div>
+          </div>
+          <div class="m-card -shadow u-textCenter">
+            <div class="m-card__body">
+              <p><img src="/images/icon-deliver.svg" alt=""></p>
+              <h4 class="u-text-uppercase">Deliver</h4>
+              <p>Content in Context. Prepare responsive audio, video, image and document files to be delivered fast, optimized and secure, powered by the Filestack CDN. Easily display content inside your application with the Filestack embeddable viewer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-py-70">
+      <div class="container">
+        <div class="d-grid d-grid--2cols">
+          <div>
+            <h2>#1 Developer Service for File Uploads</h2>
+            <p>Get user content from anywhere and improve file and video upload with a powerful, easy to use API.</p>
+            <ul>
+              <li>Beautiful UI with over 20 integrated sources</li>
+              <li><a href="#">Uploads that are 100X more reliable with our Content Ingestion Network (CIN)</a></li>
+              <li>Secure transfer to handle the most sensitive files</li>
+            </ul>
+            <p><a href="#" rel="external">Check out full picker documentation</a></p>
+          </div>
+          <div>
+            <main-picker></main-picker>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-py-70">
+      <div class="container">
+        <div class="d-grid d-grid--2cols">
+          <div>
+            <h2>Powerful Image Transformation</h2>
+            <p>Easily transform, convert and optimize images, files and videos right on the network – before it even arrives in your app. Simply apply beautiful effects and filters to any image.</p>
+            <image-picker></image-picker>
+          </div>
+          <div class="m-card -shadow">
+            <image-preview></image-preview>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<aside>
+  CTA
+</aside>
+<footer>
+  Footer
+</footer>
+</body>
+
+</html>
